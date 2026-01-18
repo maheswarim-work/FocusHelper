@@ -40,12 +40,12 @@ flowchart LR
     Phase1 --> Phase2
     Phase2 --> Phase3
 
-    style A fill:#e3f2fd,stroke:#1976d2
-    style B fill:#e3f2fd,stroke:#1976d2
-    style C fill:#fff8e1,stroke:#f9a825
-    style D fill:#fff8e1,stroke:#f9a825
-    style E fill:#e8f5e9,stroke:#388e3c
-    style F fill:#fce4ec,stroke:#c2185b
+    style A fill:#1565c0,stroke:#0d47a1,color:#fff
+    style B fill:#1565c0,stroke:#0d47a1,color:#fff
+    style C fill:#f57f17,stroke:#e65100,color:#fff
+    style D fill:#f57f17,stroke:#e65100,color:#fff
+    style E fill:#2e7d32,stroke:#1b5e20,color:#fff
+    style F fill:#ad1457,stroke:#880e4f,color:#fff
 ```
 
 ### Visual Summary
