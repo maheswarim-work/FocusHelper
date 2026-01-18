@@ -29,12 +29,12 @@ Based on plan.md, this is a single-page web application:
 
 **Purpose**: Project initialization with Vite + React + TypeScript + Tailwind + shadcn/ui
 
-- [ ] T001 Initialize Vite project with React + TypeScript template in project root
-- [ ] T002 Install and configure Tailwind CSS with PostCSS in tailwind.config.js
-- [ ] T003 Initialize shadcn/ui and create components.json configuration
-- [ ] T004 [P] Create src/lib/utils.ts with shadcn utility functions (cn helper)
-- [ ] T005 [P] Configure path aliases in tsconfig.json for @/* imports
-- [ ] T006 [P] Update src/index.css with Tailwind directives and CSS variables
+- [x] T001 Initialize Vite project with React + TypeScript template in project root
+- [x] T002 Install and configure Tailwind CSS with PostCSS in tailwind.config.js
+- [x] T003 Initialize shadcn/ui and create components.json configuration
+- [x] T004 [P] Create src/lib/utils.ts with shadcn utility functions (cn helper)
+- [x] T005 [P] Configure path aliases in tsconfig.json for @/* imports
+- [x] T006 [P] Update src/index.css with Tailwind directives and CSS variables
 
 ---
 
@@ -44,12 +44,12 @@ Based on plan.md, this is a single-page web application:
 
 **CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T007 Create Task and Column types in src/types/task.ts per data-model.md
-- [ ] T008 Implement useTaskStorage hook in src/hooks/useTaskStorage.ts per storage-api.md contract
-- [ ] T009 Install shadcn/ui Button component in src/components/ui/button.tsx
-- [ ] T010 [P] Install shadcn/ui Card component in src/components/ui/card.tsx
-- [ ] T011 [P] Install shadcn/ui Input component in src/components/ui/input.tsx
-- [ ] T012 [P] Install shadcn/ui Label component in src/components/ui/label.tsx
+- [x] T007 Create Task and Column types in src/types/task.ts per data-model.md
+- [x] T008 Implement useTaskStorage hook in src/hooks/useTaskStorage.ts per storage-api.md contract
+- [x] T009 Install shadcn/ui Button component in src/components/ui/button.tsx
+- [x] T010 [P] Install shadcn/ui Card component in src/components/ui/card.tsx
+- [x] T011 [P] Install shadcn/ui Input component in src/components/ui/input.tsx
+- [x] T012 [P] Install shadcn/ui Label component in src/components/ui/label.tsx
 
 **Checkpoint**: Foundation ready - user story implementation can now begin
 
@@ -63,15 +63,15 @@ Based on plan.md, this is a single-page web application:
 
 ### Implementation for User Story 1
 
-- [ ] T013 [US1] Create TaskCard component in src/components/TaskCard.tsx displaying title and deadline
-- [ ] T014 [US1] Create TaskColumn component in src/components/TaskColumn.tsx with column header and task list
-- [ ] T015 [US1] Create TaskBoard component in src/components/TaskBoard.tsx with three-column layout
-- [ ] T016 [US1] Install shadcn/ui Dialog component in src/components/ui/dialog.tsx for add task modal
-- [ ] T017 [US1] Create TaskForm component in src/components/TaskForm.tsx with title, deadline, description fields
-- [ ] T018 [US1] Implement Add Task button in TaskColumn that opens TaskForm dialog
-- [ ] T019 [US1] Wire up addTask from useTaskStorage to TaskForm submission
-- [ ] T020 [US1] Implement title validation (required, non-empty) with error message in TaskForm
-- [ ] T021 [US1] Update App.tsx to render TaskBoard as main content
+- [x] T013 [US1] Create TaskCard component in src/components/TaskCard.tsx displaying title and deadline
+- [x] T014 [US1] Create TaskColumn component in src/components/TaskColumn.tsx with column header and task list
+- [x] T015 [US1] Create TaskBoard component in src/components/TaskBoard.tsx with three-column layout
+- [x] T016 [US1] Install shadcn/ui Dialog component in src/components/ui/dialog.tsx for add task modal
+- [x] T017 [US1] Create TaskForm component in src/components/TaskForm.tsx with title, deadline, description fields
+- [x] T018 [US1] Implement Add Task button in TaskColumn that opens TaskForm dialog
+- [x] T019 [US1] Wire up addTask from useTaskStorage to TaskForm submission
+- [x] T020 [US1] Implement title validation (required, non-empty) with error message in TaskForm
+- [x] T021 [US1] Update App.tsx to render TaskBoard as main content
 
 **Checkpoint**: User Story 1 complete - users can create and view tasks in all three columns
 
@@ -85,11 +85,11 @@ Based on plan.md, this is a single-page web application:
 
 ### Implementation for User Story 2
 
-- [ ] T022 [US2] Add onClick handler to TaskCard to open edit mode
-- [ ] T023 [US2] Modify TaskForm to accept optional existing task for edit mode
-- [ ] T024 [US2] Implement edit dialog that pre-fills TaskForm with current task values
-- [ ] T025 [US2] Wire up updateTask from useTaskStorage to TaskForm edit submission
-- [ ] T026 [US2] Handle clearing optional fields (description, deadline) in edit mode
+- [x] T022 [US2] Add onClick handler to TaskCard to open edit mode
+- [x] T023 [US2] Modify TaskForm to accept optional existing task for edit mode
+- [x] T024 [US2] Implement edit dialog that pre-fills TaskForm with current task values
+- [x] T025 [US2] Wire up updateTask from useTaskStorage to TaskForm edit submission
+- [x] T026 [US2] Handle clearing optional fields (description, deadline) in edit mode
 
 **Checkpoint**: User Story 2 complete - users can edit any task field
 
@@ -103,15 +103,15 @@ Based on plan.md, this is a single-page web application:
 
 ### Implementation for User Story 3
 
-- [ ] T027 [US3] Install @dnd-kit/core and @dnd-kit/sortable dependencies
-- [ ] T028 [US3] Set up DndContext with accessibility announcements in TaskBoard
-- [ ] T029 [US3] Make TaskCard draggable using useDraggable hook
-- [ ] T030 [US3] Make TaskColumn a droppable zone using useDroppable hook
-- [ ] T031 [US3] Implement DragOverlay component for visual feedback during drag
-- [ ] T032 [US3] Handle onDragEnd to call moveTask from useTaskStorage
-- [ ] T033 [US3] Add keyboard sensor for Space/Enter pickup and arrow key navigation
-- [ ] T034 [US3] Add touch sensor with activation delay for mobile drag
-- [ ] T035 [US3] Configure screen reader announcements for drag operations
+- [x] T027 [US3] Install @dnd-kit/core and @dnd-kit/sortable dependencies
+- [x] T028 [US3] Set up DndContext with accessibility announcements in TaskBoard
+- [x] T029 [US3] Make TaskCard draggable using useDraggable hook
+- [x] T030 [US3] Make TaskColumn a droppable zone using useDroppable hook
+- [x] T031 [US3] Implement DragOverlay component for visual feedback during drag
+- [x] T032 [US3] Handle onDragEnd to call moveTask from useTaskStorage
+- [x] T033 [US3] Add keyboard sensor for Space/Enter pickup and arrow key navigation
+- [x] T034 [US3] Add touch sensor with activation delay for mobile drag
+- [x] T035 [US3] Configure screen reader announcements for drag operations
 
 **Checkpoint**: User Story 3 complete - users can move tasks between columns via drag-and-drop
 
@@ -125,10 +125,10 @@ Based on plan.md, this is a single-page web application:
 
 ### Implementation for User Story 4
 
-- [ ] T036 [US4] Install shadcn/ui AlertDialog component in src/components/ui/alert-dialog.tsx
-- [ ] T037 [US4] Add delete button to TaskCard or TaskForm edit view
-- [ ] T038 [US4] Implement delete confirmation dialog using AlertDialog
-- [ ] T039 [US4] Wire up deleteTask from useTaskStorage to confirmation action
+- [x] T036 [US4] Install shadcn/ui AlertDialog component in src/components/ui/alert-dialog.tsx
+- [x] T037 [US4] Add delete button to TaskCard or TaskForm edit view
+- [x] T038 [US4] Implement delete confirmation dialog using AlertDialog
+- [x] T039 [US4] Wire up deleteTask from useTaskStorage to confirmation action
 
 **Checkpoint**: User Story 4 complete - users can delete tasks with confirmation
 
@@ -138,13 +138,13 @@ Based on plan.md, this is a single-page web application:
 
 **Purpose**: Improvements that affect multiple user stories and edge case handling
 
-- [ ] T040 [P] Add responsive design for mobile/tablet layouts in TaskBoard and TaskColumn
-- [ ] T041 [P] Implement empty state message when a column has no tasks
-- [ ] T042 [P] Add loading state to useTaskStorage for initial localStorage read
-- [ ] T043 [P] Implement text truncation for long titles/descriptions in TaskCard
-- [ ] T044 [P] Add error boundary and error state handling for storage failures
-- [ ] T045 Run manual testing checklist from plan.md Verification Plan
-- [ ] T046 Validate against quickstart.md integration scenarios
+- [x] T040 [P] Add responsive design for mobile/tablet layouts in TaskBoard and TaskColumn
+- [x] T041 [P] Implement empty state message when a column has no tasks
+- [x] T042 [P] Add loading state to useTaskStorage for initial localStorage read
+- [x] T043 [P] Implement text truncation for long titles/descriptions in TaskCard
+- [x] T044 [P] Add error boundary and error state handling for storage failures
+- [x] T045 Run manual testing checklist from plan.md Verification Plan
+- [x] T046 Validate against quickstart.md integration scenarios
 
 ---
 

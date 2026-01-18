@@ -99,6 +99,14 @@ specs/001-task-manager-columns/
     └── requirements.md # Requirements validation checklist
 ```
 
+## Demo
+
+Working application built using the SpecKit workflow:
+
+![FocusHelper Screenshot](docs/images/focushelper-screenshot.png)
+
+*Three-column task manager with drag-and-drop support, localStorage persistence, and accessible keyboard navigation.*
+
 ## Feature: Three-Column Task Manager
 
 ### User Stories
@@ -159,6 +167,10 @@ FocusHelper/
 
 SpecKit workflow learned from:
 - **[Spec-Driven Development with GitHub Spec-Kit](https://www.linkedin.com/learning/spec-driven-development-with-github-spec-kit/)** - LinkedIn Learning
+
+## References
+
+- **[GitHub Spec-Kit](https://github.com/github/spec-kit)** - Official SpecKit repository
 
 ## License
 
