@@ -2,6 +2,15 @@
 
 A task manager web app with three columns (Tasks, Meetings, Backburner) built with Vite + React + Tailwind CSS + shadcn/ui.
 
+## Acknowledgments
+
+SpecKit workflow learned from:
+- **[Spec-Driven Development with GitHub Spec-Kit](https://www.linkedin.com/learning/spec-driven-development-with-github-spec-kit/)** - LinkedIn Learning
+
+## References
+
+- **[GitHub Spec-Kit](https://github.com/github/spec-kit)** - Official SpecKit repository
+
 ## SpecKit Workflow
 
 This project uses **SpecKit**, a specification-driven development workflow learned from the LinkedIn Learning course:
@@ -162,15 +171,6 @@ FocusHelper/
 ├── .specify/                # SpecKit configuration
 └── CLAUDE.md               # AI assistant instructions
 ```
-
-## Acknowledgments
-
-SpecKit workflow learned from:
-- **[Spec-Driven Development with GitHub Spec-Kit](https://www.linkedin.com/learning/spec-driven-development-with-github-spec-kit/)** - LinkedIn Learning
-
-## References
-
-- **[GitHub Spec-Kit](https://github.com/github/spec-kit)** - Official SpecKit repository
 
 ## License
 
