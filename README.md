@@ -2,10 +2,11 @@
 
 A task manager web app with three columns (Tasks, Meetings, Backburner) built with Vite + React + Tailwind CSS + shadcn/ui.
 
-## Acknowledgments
+## Acknowledgments and Credits
 
-SpecKit workflow learned from:
-- **[Spec-Driven Development with GitHub Spec-Kit](https://www.linkedin.com/learning/spec-driven-development-with-github-spec-kit/)** - LinkedIn Learning
+- **[Spec-Driven Development with GitHub Spec-Kit](https://www.linkedin.com/learning/spec-driven-development-with-github-spec-kit/)** by Morten Rand-Hendriksen - LinkedIn Learning
+- **[How to write a good spec for AI agents](https://addyosmani.com/blog/good-spec/)** by Addy Osmani
+- **[Understanding Spec-Driven-Development: Kiro, spec-kit, and Tessl](https://martinfowler.com/articles/exploring-gen-ai/sdd-3-tools.html)** by Birgitta Böckeler
 
 ## References
 
