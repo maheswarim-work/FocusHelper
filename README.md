@@ -13,11 +13,7 @@ SpecKit workflow learned from:
 
 ## SpecKit Workflow
 
-This project uses **SpecKit**, a specification-driven development workflow learned from the LinkedIn Learning course:
-
-**[Spec-Driven Development with GitHub Spec-Kit](https://www.linkedin.com/learning/spec-driven-development-with-github-spec-kit/)**
-
-Features are developed through a structured process that ensures clarity, traceability, and quality.
+This project uses **SpecKit**, a specification-driven development workflow. Features are developed through a structured process that ensures clarity, traceability, and quality.
 
 ### Workflow Steps
 
