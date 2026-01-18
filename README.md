@@ -13,30 +13,61 @@ Features are developed through a structured process that ensures clarity, tracea
 ### Workflow Steps
 
 ```mermaid
-flowchart TD
-    A["/speckit.specify"] --> B["/speckit.clarify"]
-    B --> C["/speckit.plan"]
-    C --> D["/speckit.tasks"]
-    D --> E["/speckit.implement"]
-    E --> F["/speckit.analyze"]
+flowchart LR
+    subgraph Phase1["📋 Phase 1: Specification"]
+        A["1. /speckit.specify<br/>─────────────<br/>Create spec.md"]
+        B["2. /speckit.clarify<br/>─────────────<br/>Refine spec.md"]
+        A --> B
+    end
 
-    A -->|Creates| A1["spec.md<br/>Feature specification"]
-    B -->|Updates| A1
-    C -->|Creates| C1["plan.md<br/>Implementation plan"]
-    C -->|Creates| C2["research.md<br/>Technical decisions"]
-    C -->|Creates| C3["data-model.md<br/>Entity definitions"]
-    C -->|Creates| C4["contracts/<br/>API specifications"]
-    C -->|Creates| C5["quickstart.md<br/>Integration scenarios"]
-    D -->|Creates| D1["tasks.md<br/>Actionable tasks"]
-    E -->|Executes| D1
-    F -->|Validates| F1["Cross-artifact<br/>consistency"]
+    subgraph Phase2["📐 Phase 2: Planning"]
+        C["3. /speckit.plan<br/>─────────────<br/>Create plan.md<br/>research.md<br/>data-model.md<br/>contracts/<br/>quickstart.md"]
+        D["4. /speckit.tasks<br/>─────────────<br/>Create tasks.md"]
+        C --> D
+    end
 
-    style A fill:#e1f5fe
-    style B fill:#e1f5fe
-    style C fill:#fff3e0
-    style D fill:#fff3e0
-    style E fill:#e8f5e9
-    style F fill:#fce4ec
+    subgraph Phase3["🚀 Phase 3: Execution"]
+        E["5. /speckit.implement<br/>─────────────<br/>Execute tasks<br/>Generate code"]
+        F["6. /speckit.analyze<br/>─────────────<br/>Validate quality"]
+        E --> F
+    end
+
+    Phase1 --> Phase2
+    Phase2 --> Phase3
+
+    style A fill:#e3f2fd,stroke:#1976d2
+    style B fill:#e3f2fd,stroke:#1976d2
+    style C fill:#fff8e1,stroke:#f9a825
+    style D fill:#fff8e1,stroke:#f9a825
+    style E fill:#e8f5e9,stroke:#388e3c
+    style F fill:#fce4ec,stroke:#c2185b
+```
+
+### Visual Summary
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                           SpecKit Workflow                                   │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐  │
+│  │   SPECIFY   │───▶│   CLARIFY   │───▶│    PLAN     │───▶│    TASKS    │  │
+│  │             │    │             │    │             │    │             │  │
+│  │  spec.md    │    │  spec.md    │    │  plan.md    │    │  tasks.md   │  │
+│  │  (create)   │    │  (refine)   │    │  research   │    │  (46 tasks) │  │
+│  │             │    │             │    │  data-model │    │             │  │
+│  │             │    │             │    │  contracts  │    │             │  │
+│  └─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘  │
+│                                                                  │          │
+│                                                                  ▼          │
+│                                        ┌─────────────┐    ┌─────────────┐  │
+│                                        │   ANALYZE   │◀───│  IMPLEMENT  │  │
+│                                        │             │    │             │  │
+│                                        │  Validate   │    │  Execute    │  │
+│                                        │  Quality    │    │  Tasks      │  │
+│                                        └─────────────┘    └─────────────┘  │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ### Step-by-Step Process
