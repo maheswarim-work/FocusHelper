@@ -48,6 +48,14 @@ flowchart LR
     style F fill:#ad1457,stroke:#880e4f,color:#fff
 ```
 
+## Demo
+
+Working application built using the SpecKit workflow:
+
+![FocusHelper Screenshot](docs/images/focushelper-screenshot.png)
+
+*Three-column task manager with drag-and-drop support, localStorage persistence, and accessible keyboard navigation.*
+
 ### Visual Summary
 
 ```
@@ -104,14 +112,6 @@ specs/001-task-manager-columns/
     └── requirements.md # Requirements validation checklist
 ```
 
-## Demo
-
-Working application built using the SpecKit workflow:
-
-![FocusHelper Screenshot](docs/images/focushelper-screenshot.png)
-
-*Three-column task manager with drag-and-drop support, localStorage persistence, and accessible keyboard navigation.*
-
 ## Feature: Three-Column Task Manager
 
 ### User Stories
@@ -167,7 +167,3 @@ FocusHelper/
 ├── .specify/                # SpecKit configuration
 └── CLAUDE.md               # AI assistant instructions
 ```
-
-## License
-
-MIT
